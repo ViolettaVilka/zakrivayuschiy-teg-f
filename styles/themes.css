@@ -8,10 +8,10 @@
     --background-color: #000;
     --accent-color: #00CC14;
     --font-weight-cart-title: 785;
-    --font-weight-card-text: 465;
+    --font-weight-card-text: 400;
     --common-font: 'Inter-Variable', sans-serif ;
     --accent-font: 'PressStart2P', cursive;
-    --font-weight-header: 400;
+    --font-weight-header: 465;
     --background-image:
         repeating-linear-gradient(to right, #000, #d3d3d300 2px),
         repeating-linear-gradient(to bottom, #000, #d3d3d300 2px),

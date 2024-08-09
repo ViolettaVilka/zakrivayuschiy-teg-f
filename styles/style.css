@@ -155,7 +155,7 @@
 
 .main__card_title {
   padding: 3px 0 5px 10px;
-  font-family: Inter;
+  font-family: var(--common-font);
   font-weight: var(--font-weight-cart-title);
   line-height: 21.78px;
 }
@@ -205,7 +205,7 @@
   flex-direction: column;
   gap: 27px;
   padding: 25px;
-  font-family: Inter;
+  font-family: var(--common-font);
   font-weight: var(--font-weight-card-text);
   line-height: 21px;
 }
