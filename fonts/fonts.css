@@ -1,30 +1,33 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
+
 @font-face {
-    font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
-    font-weight: 400;
-  }
+  font-family: 'Inter-Variable';
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
+  font-weight: 400 700;
+  font-variation-settings: 'wght' 400;
+}
 
-  @font-face {
-    font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
-    font-weight: 700;
-  }
+@font-face {
+  font-family: 'Inter-Variable';
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
+  font-weight: 400 700;
+  font-variation-settings: 'wght' 700;
+}
 
-  @font-face {
-    font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
-    font-variation-settings: 'wdth' 785;
-  }
+@font-face {
+  font-family: 'Inter-Variable';
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
+  font-variation-settings: 'wdth' 785;
+}
 
-  @font-face {
-    font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
-    font-variation-settings: 'wdth' 465;
-  }
+@font-face {
+  font-family: 'Inter-Variable';
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
+  font-variation-settings: 'wdth' 465;
+}
 
-  @font-face {
-    font-family: 'PressStart2P';
-    src: url(./PressStart2P-Regular.woff) format(woff);
-    font-weight: 400;
-  }
+@font-face {
+  font-family: 'PressStart2P';
+  src: url(./PressStart2P-Regular.woff) format('woff');
+  font-weight: 400;
+}
