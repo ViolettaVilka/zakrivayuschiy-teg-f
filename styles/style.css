@@ -317,11 +317,6 @@
   transition: fill 0.3s;
 }
 
-.main-body {
-  fill: #00000000;
-  transition: fill 0.3s;
-}
-
 .like-icon:active .main-body {
   fill: var(--heart-main-body-color);
   transition: fill 0.3s ease-in 0.05s;
@@ -405,7 +400,7 @@
   margin-inline-end: 20px;
 }
 
-.floppy-large  {
+.floppy-large {
   transform: scale(1.8571);
   transform-origin: 0 0;
 }
@@ -449,7 +444,7 @@
     width: 306px;
   }
   .floppy-image {
-    transform: scale(1.3333); 
+    transform: scale(1.3333);
     margin-inline-end: 0px;
   }
 }

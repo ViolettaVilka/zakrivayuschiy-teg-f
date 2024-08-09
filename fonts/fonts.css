@@ -1,26 +1,26 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
 @font-face {
     font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2');
+    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
     font-weight: 400;
   }
 
   @font-face {
     font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2');
+    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
     font-weight: 700;
   }
 
   @font-face {
     font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2');
-    font-weight: 785;
+    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
+    font-variation-settings: 'wdth' 785;
   }
 
   @font-face {
     font-family: 'Inter-Variable';
-    src: url(./Inter-Variable.woff2) format('woff2');
-    font-weight: 465;
+    src: url(./Inter-Variable.woff2) format('woff2 supports variations, woff2-variations');
+    font-variation-settings: 'wdth' 465;
   }
 
   @font-face {
