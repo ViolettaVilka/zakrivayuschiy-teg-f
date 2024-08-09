@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" >
+<symbol id="floppy" fill="currentColor" viewBox="0 0 21 21">
+  <g fill="currentColor">
+    <use href="#B"></use>
+    <use href="#B" y="1.615"></use>
+    <use href="#B" y="3.231"></use>
+    <use href="#B" y="4.846"></use>
+    <use href="#B" y="6.461"></use>
+    <use href="#B" y="8.077"></use>
+    <use href="#B" y="9.692"></use>
+    <use href="#B" y="11.308"></use>
+    <use href="#B" y="12.923"></use>
+    <use href="#B" y="14.539"></use>
+    <use href="#B" y="16.154"></use>
+    <use href="#B" y="17.769"></use>
+    <path d="M0 19.385h1.615V21H0z"></path>
+    <use href="#C"></use>
+    <use href="#C" x="-1.615"></use>
+    <use href="#C" x="-3.23"></use>
+    <use href="#C" x="-4.846"></use>
+    <path d="M11.308 0v1.615H9.692V0z"></path>
+    <path d="M9.692 0v1.615H8.077V0z"></path>
+    <path d="M8.077 0v1.615H6.462V0z"></path>
+    <path d="M6.462 0v1.615H4.846V0z"></path>
+    <path d="M4.846 0v1.615H3.231V0z"></path>
+    <path d="M3.231 0v1.615H1.615V0z"></path>
+    <use href="#D"></use>
+    <path d="M4.846 3.231v1.615H3.231V3.231z"></path>
+    <path d="M4.846 1.615V3.23H3.231V1.615zm0 3.231v1.615H3.231V4.846zm11.308-1.615v1.615h-1.615V3.231z"></path>
+    <use href="#D" x="-3.231"></use>
+    <path d="M16.154 4.846v1.615h-1.615V4.846zm-3.231-1.615v1.615h-1.615V3.231z"></path>
+    <use href="#D" x="-6.462"></use>
+    <path d="M12.923 4.846v1.615h-1.615V4.846z"></path>
+    <use href="#E"></use>
+    <use href="#E" x="-1.616"></use>
+    <use href="#E" x="-3.231"></use>
+    <path d="M11.308 6.461v1.615H9.692V6.461z"></path>
+    <path d="M9.692 6.461v1.615H8.077V6.461z"></path>
+    <path d="M8.077 6.461v1.615H6.462V6.461z"></path>
+    <path d="M6.462 6.461v1.615H4.846V6.461z"></path>
+    <path d="M4.846 6.461v1.615H3.231V6.461z"></path>
+    <use href="#F"></use>
+    <use href="#F" x="-1.615"></use>
+    <use href="#F" x="-3.231"></use>
+    <use href="#F" x="-4.846"></use>
+    <path d="M11.308 11.308v1.615H9.692v-1.615z"></path>
+    <path d="M9.692 11.308v1.615H8.077v-1.615z"></path>
+    <path d="M8.077 11.308v1.615H6.462v-1.615z"></path>
+    <path d="M6.462 11.308v1.615H4.846v-1.615z"></path>
+    <use href="#G"></use>
+    <use href="#F" y="1.615"></use>
+    <use href="#G" y="1.615"></use>
+    <use href="#F" y="3.231"></use>
+    <use href="#G" y="3.231"></use>
+    <use href="#F" y="4.846"></use>
+    <use href="#G" y="4.846"></use>
+    <use href="#G" y="6.461"></use>
+    <use href="#F" y="6.461"></use>
+    <use href="#H"></use>
+    <use href="#H" x="-1.616"></use>
+    <use href="#H" x="-3.231"></use>
+    <use href="#H" x="-4.846"></use>
+    <use href="#H" x="-6.462"></use>
+    <path d="M11.308 19.385V21H9.692v-1.615z"></path>
+    <path d="M9.692 19.385V21H8.077v-1.615z"></path>
+    <path d="M8.077 19.385V21H6.462v-1.615z"></path>
+    <path d="M6.462 19.385V21H4.846v-1.615z"></path>
+    <path d="M4.846 19.385V21H3.231v-1.615z"></path>
+    <path d="M3.231 19.385V21H1.615v-1.615z"></path>
+    <use href="#I"></use>
+    <use href="#I" y="-1.615"></use>
+    <use href="#I" y="-3.231"></use>
+    <use href="#I" y="-4.846"></use>
+    <use href="#I" y="-6.461"></use>
+    <use href="#I" y="-8.077"></use>
+    <path d="M21 11.308h-1.615V9.692H21z"></path>
+    <path d="M21 9.692h-1.615V8.077H21z"></path>
+    <path d="M21 8.077h-1.615V6.462H21z"></path>
+    <path d="M21 6.461h-1.615V4.846H21z"></path>
+    <path d="M21 4.846h-1.615V3.231H21z"></path>
+  </g>
+  <defs>
+    <path id="B" d="M0 0h1.615v1.615H0z"></path>
+    <path id="C" d="M17.769 0v1.615h-1.615V0z"></path>
+    <path id="D" d="M19.385 1.615v1.615h-1.615V1.615z"></path>
+    <path id="E" d="M16.154 6.461v1.615h-1.615V6.461z"></path>
+    <path id="F" d="M17.769 11.308v1.615h-1.615v-1.615z"></path>
+    <path id="G" d="M4.846 11.308v1.615H3.231v-1.615z"></path>
+    <path id="H" d="M19.385 19.385V21h-1.615v-1.615z"></path>
+    <path id="I" d="M21 21h-1.615v-1.615H21z"></path>
+  </defs>
+  </symbol>
+</svg>

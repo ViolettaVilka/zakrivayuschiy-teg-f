@@ -1,1 +1,20 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --common-font: 'Inter-Variable', sans-serif ;
+    --accent-font: 'PressStart2P', cursive;
+    --background-color: #fff;
+    --accent-color: #000;
+    --font-weight-header: 400;
+    --font-weight-cart-title: 700;
+    --font-weight-card-text: 400;
+    --background-image:
+        repeating-linear-gradient(to right, #d3d3d3, #d3d3d300 2px),
+        repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d300 2px),
+        linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    --disabled-color: #00000060;
+    --text-color-hovered: #fff;
+    --heart-contour-color: #000;
+    --heart-main-body-color: #FF0000;
+    --gradient-color: #d3d3d3;
+    --tag-color: #00000080;
+  }
