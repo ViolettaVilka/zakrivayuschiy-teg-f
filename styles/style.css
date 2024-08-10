@@ -14,9 +14,12 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font: var(--common-font);
+  font-variation-settings: var(--font-weight-card-text);
   min-height: 100vh;
   background-image: var(--background-image);
   background-size: cover;
@@ -44,26 +47,28 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--background-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font) , 'fantasy';
   border: 2px solid var(--accent-color);
 }
 
-.header__title {
+.header__logo {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 65px;
-  margin-block-end: 20px;;
+  margin-block-end: 20px;
+  text-transform: uppercase;
 }
 
-.header__title-name {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 23px;
   text-transform: uppercase;
 }
 
 .header__theme-menu {
-  margin: 25px 0 25px 0;
+  margin: 25px 0 21px 0;
   font-size: 14px;
   line-height: 14px;
+  font-size: 14px;
 }
 
 .theme-menu__list {
@@ -124,7 +129,24 @@
   transition: transform 300ms ease;
 }
 
+@media (width <= 375px) {
+  .header__section {
+    padding-block-start: 110px;
 
+  }
+
+  .header__logo {
+    margin-block-end: 0;
+  }
+
+  .header__title {
+    margin-block-start: 10px;
+  }
+
+  .header__theme-menu {
+    margin: 15px 0 21px 0;
+  }
+}
 
 
 /******* Header end *******/
@@ -136,12 +158,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main__cards_list {
-  display: flex;
-  flex-direction: column;
-  margin-block-start: 104px;
+  align-self: center;
+  margin-block-start: 100px;
   gap: 52px;
 }
 
@@ -154,16 +172,17 @@
 }
 
 .main__card_title {
-  padding: 3px 0 5px 10px;
-  font-family: var(--common-font);
-  font-weight: var(--font-weight-cart-title);
+  padding: 5px 10px 7px 12px;
+  font-family: var(--common-font) , sans-serif;
+  font-size: 18px;
+  font-variation-settings: var(--font-weight-card-title);
   line-height: 21.78px;
 }
 
 .card_image-wrapper {
   position: relative;
+  height: 696px;
   width: 100%;
-  
   outline: 2px solid var(--accent-color);
 }
 
@@ -171,27 +190,27 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'fantasy';
   color: var(--tag-color);
   mix-blend-mode: hard-light;
   font-size: 14px;
   line-height: 14px;
+  text-shadow:
+    -1px -1px 0 var(--background-color),
+    1px -1px 0 var(--background-color),
+    -1px 1px 0 var(--background-color),
+    1px 1px 0 var(--background-color);
 }
 
-@supports (-webkit-text-stroke: 1px var(--background-color)) {
+@supports (-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color)) {
   .image-tag {
     -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
   }
 }
 
-@supports not (-webkit-text-stroke: 1px var(--background-color)) {
-  .image-tag {
-    text-shadow:
-      -1px -1px 0 var(--background-color),
-      1px -1px 0 var(--background-color),
-      -1px 1px 0 var(--background-color),
-      1px 1px 0 var(--background-color);
-  }
+.capital-tag{
+  text-transform: uppercase;
 }
 
 .main__card_image {
@@ -204,9 +223,9 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding: 25px;
-  font-family: var(--common-font);
-  font-weight: var(--font-weight-card-text);
+  padding: 28px;
+  font-family: var(--common-font), sans-serif;
+  font-variation-settings: var(--font-weight-card-text);
   line-height: 21px;
 }
 
@@ -214,14 +233,14 @@
   display: flex;
   grid-row: 4;
   justify-content: end;
-  margin: 25px 25px 25px 0;
+  margin: 0 25px 25px 0;
   align-items: center;
 }
 
 .button {
-  font-family: 'PressStart2P';
+  font-family: var(--accent-font), 'fantasy';
   font-size: 14px;
-  font-weight: var(--font-weight-card-text);
+  font-variation-settings: var(--font-weight-card-text);
   line-height: 12.6px;
   outline: 2px solid var(--accent-color);
   border-style: none;
@@ -252,44 +271,52 @@
   transform: scaleX(1);
 }
 
-.button:hover {
-  color: var(--text-color-hovered);
-}
-
 .card__like-button {
   width: 130px;
   background-color: transparent;
   grid-row: 4;
   justify-self: end;
-  padding: 9px 17px;
-  z-index: 0;
+  padding: 10px 17px;
 }
 
 .button__text {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  color: var(--text-color-hovered);
+  mix-blend-mode: difference;
 }
 
 .card__icon-button {
   background-color: transparent;
   outline-style: none;
-  height: 30px;
-  width: 30px;
+  height: 34px;
+  width: 34px;
   border-style: none;
   padding: 0;
   margin-right: 7px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
+  transition: outline 300ms;
 }
 
 
+@media (width <= 375px) {
+
+.card_image-wrapper {
+  height: 368px;
+  }
+}
+
 /******* Main end *******/
 /*********** Heart-icon ************/
+
+.like-icon {
+  width: 37px;
+  height: 24px;
+}
 
 
 .core {
@@ -352,19 +379,12 @@
 
 
 /*********** Heart-icon ************/
-/******* Footer start *******/
 
 
-.footer {
-  display: flex;
-  justify-content: center;
-  margin-block-start: 54px;
-  margin-block-end: 105px;
-}
-
-.footer__button {
+.save_button {
   display: flex;
   align-items: center;
+  margin-block-end: 105px;
   background-color: var(--background-color);
   width: 335px;
   padding: 15px 21px 15px 19px;
@@ -374,8 +394,6 @@
   margin-inline-end: 8px;
   width: 21px;
   height: 21px;
-  fill: var(--accent-color);
-  font-weight: var(--font-weight-card-text);
 }
 
 .button:hover .floppy-image {
@@ -388,7 +406,7 @@
   flex-direction: column;
   background-color: var(--background-color);
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), 'fantasy';
   padding: 30px;
   gap: 30px;
   width: 357px;
@@ -401,7 +419,6 @@
 }
 
 .floppy-large {
-  transform: scale(1.8571);
   transform-origin: 0 0;
 }
 
@@ -432,19 +449,16 @@
   background-color: #000000BF;
 }
 
-
-/******* Footer end *******/
-
-
 @media (width <= 375px) {
-  .footer__button {
+  .save_button {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 306px;
   }
   .floppy-image {
-    transform: scale(1.3333);
+    width: 28px;
+    height: 28px;
     margin-inline-end: 0px;
   }
 }
