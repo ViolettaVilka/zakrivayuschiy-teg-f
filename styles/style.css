@@ -22,7 +22,7 @@
   font-variation-settings: 'wght' var(--font-weight-card-text);
   min-height: 100vh;
   background-image: var(--background-image);
-  background-attachment: fixed; 
+  background-attachment: fixed;
   background-size: cover;
   color: var(--accent-color);
 }
